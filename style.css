@@ -1,0 +1,49 @@
+.player {
+  position: relative;
+  height: 200px;
+  width: 1000px;
+  background-color: #def;
+  /*border: 1px solid black;*/
+}
+
+svg.play-pause, svg.forward-backward {
+  top: 10%;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  height: 80%;
+  width: 24%;
+  /*border: 1px solid black;*/
+  fill: none;
+  stroke-width: 2;
+  stroke: #16a085;
+  margin: auto 20%;
+}
+svg.play-pause:hover, svg.forward-backward:hover {
+  stroke: #068045;
+  transform: scale(1.02);
+}
+
+.play-pause.pause > .play{
+  visibility: hidden;
+}
+
+.play-pause.play > .pause{
+  visibility: hidden;
+}
+
+svg.forward-backward {
+  width: 15%;
+  margin: auto 0;
+}
+.forward {
+  right: 0;
+}
+
+.controllers {
+  position: relative;
+  display: inline-block;
+  height: 70%;
+  width: 40%;
+  margin: 0 30%;
+}
